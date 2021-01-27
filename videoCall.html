@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title> Video Calling </title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="flexContainer">
+            <div class="left-pane">
+                <div class="logoSmall">
+                    <img class="logoElement" src="assets/agoraLogo.png"/>
+                </div>
+
+                <span class="headingText"> Join a Chat! </span>
+                <input type="text" id="username" placeholder="Username" value="JohnDoe123"/>
+                <br/>
+                <input type="text" id="channelName" placeholder="ChannelName" value = "Agora"/>
+
+                <button class="submitButton" id="join"> Join </button> 
+                <br/> <br/> <br/>
+                <span class="headingText"> Participants </span>
+                <br/> <br/> 
+                <div id = "participants">
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="right-pane">
+                    <div id="SelfStream">
+                    </div>
+                    <div id="remoteStream">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.0.0.js"> </script>
+        <script src="agoraRtc.js"></script>
+    </body>
+</html>
